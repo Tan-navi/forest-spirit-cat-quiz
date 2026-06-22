@@ -1,0 +1,128 @@
+body{
+
+    background-image:url("../images/catbackground.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    height:100vh;
+
+    margin:0;
+
+    font-family:'Patrick Hand', cursive;
+}
+
+.cats-page{
+
+    text-align:center;
+
+    padding-top:20px;
+}
+.cats-page p{
+
+    font-size:20px;
+
+    margin-top:20px;
+
+    margin-bottom:0px;
+}
+.cats-page h1{
+
+    font-size:60px;
+
+    color:#2f3f1d;
+
+    margin-bottom:20px;
+
+    position:relative;
+
+    top:30px;
+}
+
+.cat-grid{
+
+    display:flex;
+
+    justify-content:flex-start;
+
+    margin-left:360px;
+
+    align-items:flex-start;
+
+    gap:5px;
+
+    margin-top:1px;
+
+    flex-wrap:nowrap;
+}
+.cat-card{
+
+    width:180px;
+
+    transition:0.3s;
+
+    cursor:pointer;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+}
+.cat-card:hover{
+
+    transform:scale(1.08);
+}
+
+.cat-card img{
+
+    width:230px;
+
+    display:block;
+}
+
+.cat-card h2{
+
+    margin-top:-20px;
+
+    margin-bottom:0px;
+
+    font-size:20px;
+
+    line-height:1;
+}
+
+.quiz-btn{
+
+    display:block;
+
+    width:130px;
+
+    margin:60px auto 0 auto;
+
+    padding:10px;
+
+    background:#9bcc4d;
+
+    border-radius:12px;
+
+    text-decoration:none;
+
+    color:black;
+
+    text-align:center;
+
+    font-size:18px;
+
+    font-family:'Patrick Hand', cursive;
+
+    transition:0.2s;
+}
+
+.quiz-btn:hover{
+
+    transform:scale(1.05);
+}

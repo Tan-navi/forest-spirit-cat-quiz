@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Meet The Forest Cats</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+href="{{ url_for('static', filename='css/cats.css') }}">
+
+</head>
+
+<body>
+
+<div class="cats-page">
+
+    <h1>Meet The Forest Cat</h1>
+
+    <p>Hover over each cat to learn their personality.</p>
+
+    <div class="cat-grid">
+
+        <div class="cat-card"onmouseenter="playMeow()">
+            <img src="{{ url_for('static', filename='images/maple.png') }}">
+            <h2>Maple</h2>
+        </div>
+
+        <div class="cat-card"onmouseenter="playMeow()">
+            <img src="{{ url_for('static', filename='images/misty.png') }}">
+            <h2>Misty</h2>
+        </div>
+
+        <div class="cat-card"onmouseenter="playMeow()">
+            <img src="{{ url_for('static', filename='images/clover.png') }}">
+            <h2>Clover</h2>
+        </div>
+
+        <div class="cat-card"onmouseenter="playMeow()">
+            <img src="{{ url_for('static', filename='images/ember.png') }}">
+            <h2>Ember</h2>
+        </div>
+
+    </div>
+<a href="/quiz" class="quiz-btn">
+        Start Quiz
+    </a>
+
+</div>
+
+<audio id="forest-music" loop>
+    <source src="{{ url_for('static', filename='sounds/forest_lullaby.mp3') }}" type="audio/mpeg">
+</audio>
+<audio id="meow-sound">
+    <source src="{{ url_for('static', filename='sounds/meow.mp3') }}" type="audio/mpeg">
+</audio>
+
+<script src="{{ url_for('static', filename='js/music.js') }}"></script>
+</body>
+
+</html>

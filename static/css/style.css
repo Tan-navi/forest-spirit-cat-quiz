@@ -1,0 +1,131 @@
+body{
+
+    background-image:url("../images/welcome_background.png");
+
+    background-size:cover;
+
+    background-position:center;
+
+    background-repeat:no-repeat;
+
+    height:100vh;
+
+    margin:0;
+
+    font-family:'Patrick Hand', cursive;
+
+    position:relative;
+}
+
+/* CONTENT BOX */
+
+.content{
+
+    position:absolute;
+
+    top:50%;
+
+    left:73%;
+
+    transform:translate(-50%,-50%);
+
+    width:500px;
+
+    text-align:center;
+}
+
+/* TITLE */
+
+h1{
+
+    font-size:34px;
+
+    color:#2f3c1f;
+
+    margin-bottom:15px;
+
+    line-height:1.2;
+
+    font-weight:normal;
+
+    white-space: nowrap;
+}
+
+/* SUBTITLE */
+
+p{
+
+    font-size:18px;
+
+    color:#3e3e3e;
+
+    margin-bottom:25px;
+}
+
+/* BUTTON */
+
+.start-btn{
+
+    display:inline-block;
+
+    background:#9bcc4d;
+
+    border:none;
+
+    border-radius:18px;
+
+    padding:12px 28px;
+
+    font-size:20px;
+
+    font-family:'Patrick Hand', cursive;
+
+    text-decoration:none;
+
+    color:black;
+
+    cursor:pointer;
+}
+
+.start-btn:hover{
+
+    transform:scale(1.05);
+}
+/* MEET THE CATS PAGE */
+
+.cats-page{
+
+    text-align:center;
+
+    margin-top:50px;
+
+    font-family:'Patrick Hand', cursive;
+}
+
+.cat-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(2, 1fr);
+
+    gap:40px;
+
+    width:700px;
+
+    margin:auto;
+}
+
+.cat-card{
+
+    transition:0.3s;
+}
+
+.cat-card img{
+
+    width:220px;
+}
+
+.cat-card:hover{
+
+    transform:scale(1.1);
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Forest Personality Quiz</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='css/quiz.css') }}">
+
+</head>
+
+<body>
+
+<div class="quiz-container">
+
+    <h1>Forest Personality Quiz</h1>
+
+    <p id="question-number" class="question-number">
+        Question 1 of 7
+    </p>
+
+    <h2 id="question" class="question">
+        How would you spend a free afternoon?
+    </h2>
+
+    <div id="options" class="options">
+
+        <button class="option-btn">
+            Reading a book
+        </button>
+
+        <button class="option-btn">
+            Exploring a hidden trail
+        </button>
+
+        <button class="option-btn">
+            Helping friends with a project
+        </button>
+
+        <button class="option-btn">
+            Watching clouds in a meadow
+        </button>
+
+    </div>
+
+    <div class="quiz-buttons">
+
+        <button id="prev-btn" class="nav-btn">
+            ← Previous
+        </button>
+
+        <button id="next-btn" class="nav-btn">
+            Next →
+        </button>
+
+    </div>
+
+</div>
+
+<audio id="forest-music" loop>
+    <source src="{{ url_for('static', filename='sounds/forest_lullaby.mp3') }}" type="audio/mpeg">
+</audio>
+<audio id="click-sound">
+    <source src="{{ url_for('static', filename='sounds/water.mp3') }}" type="audio/mpeg">
+</audio>
+
+<script src="{{ url_for('static', filename='js/music.js') }}"></script>
+<script src="{{ url_for('static', filename='js/quiz.js') }}"></script>
+
+</body>
+
+</html>

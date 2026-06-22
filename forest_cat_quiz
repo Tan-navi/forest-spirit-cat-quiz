@@ -1,0 +1,17 @@
+forest_cat_quiz/
+│
+├── app.py
+│
+├── templates/
+│   ├── home.html
+│   ├── cats.html
+│   ├── quiz.html
+│   └── result.html
+│
+├── static/
+│   ├── css/
+│   │   └── style.css
+│   │
+│   └── images/
+│
+└── data/
