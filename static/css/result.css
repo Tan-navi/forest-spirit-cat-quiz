@@ -182,3 +182,17 @@ body{
         text-align:center;
     }
 }
+@media (max-width:768px){
+
+    body{
+
+        background-image:url("../images/result_background_mobile.png");
+
+        background-size:cover;
+
+        background-position:center;
+
+        background-repeat:no-repeat;
+    }
+
+}
