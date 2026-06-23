@@ -122,3 +122,48 @@ h1{
 
     margin-top:30px;
 }
+@media (max-width: 768px){
+
+    .quiz-container{
+
+        width:85%;
+
+        padding-top:40px;
+    }
+
+    h1{
+
+        font-size:30px;
+    }
+
+    .question-number{
+
+        font-size:18px;
+    }
+
+    .question{
+
+        font-size:20px;
+    }
+
+    .option-btn{
+
+        padding:12px;
+
+        font-size:16px;
+    }
+
+    .quiz-buttons{
+
+        gap:10px;
+    }
+
+    .nav-btn{
+
+        top:0;
+
+        padding:10px 18px;
+
+        font-size:16px;
+    }
+}

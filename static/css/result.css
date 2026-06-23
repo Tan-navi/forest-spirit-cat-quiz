@@ -10,9 +10,9 @@ body{
 
     margin:0;
 
-    height:100vh;
+    min-height:100vh;
 
-    overflow:hidden;
+    overflow-x:hidden;
 
     font-family:'Patrick Hand', cursive;
 }
@@ -120,4 +120,65 @@ body{
     color:#000000;
 
     text-align:right;
+}
+
+@media (max-width: 768px){
+
+    body{
+
+        overflow-y:auto;
+    }
+
+    .result-container{
+
+        padding-top:20px;
+    }
+
+    .result-container h1{
+
+        font-size:28px;
+
+        top:40px;
+    }
+
+    .result-cat{
+
+        width:180px;
+
+        top:10px;
+    }
+
+    #result-name{
+
+        font-size:30px;
+
+        top:-20px;
+    }
+
+    #result-text{
+
+        width:85%;
+
+        font-size:16px;
+
+        top:-25px;
+    }
+
+    .play-btn{
+
+        font-size:18px;
+
+        padding:10px 20px;
+
+        top:-15px;
+    }
+
+    .credit{
+
+        font-size:14px;
+
+        top:-20px;
+
+        text-align:center;
+    }
 }

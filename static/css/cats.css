@@ -8,7 +8,7 @@ body{
 
     background-repeat:no-repeat;
 
-    height:100vh;
+    min-height:100vh;
 
     margin:0;
 
@@ -125,4 +125,33 @@ body{
 .quiz-btn:hover{
 
     transform:scale(1.05);
+}
+
+@media (max-width: 768px){
+
+    .cat-grid{
+        justify-content:center;
+        flex-wrap:wrap;
+        gap:20px;
+        margin-left:0;
+    }
+
+    .cats-page h1{
+        font-size:40px;
+        top:0;
+    }
+
+    .cats-page p{
+        font-size:16px;
+        margin-top:10px;
+    }
+
+    .cat-card{
+        width:140px;
+    }
+
+    .cat-card img{
+        width:140px;
+    }
+    
 }
